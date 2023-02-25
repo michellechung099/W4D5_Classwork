@@ -23,4 +23,19 @@ end
 # p first_anagram?("gizmo", "sally")    #=> false
 # p first_anagram?("elvis", "lives")    #=> true
 
-p anagram_recursion('giz')
+# p anagram_recursion('giz')
+
+# Phase IV
+def fourth_anagram?(word_1, word_2)
+    counts = Hash.new(0)
+    word_1.chars.each do |char|
+        counts[char] += 1
+    end
+    word_2.chars.each do |char2|
+        counts[char2] -= 1
+    end
+    counts.values.all? { |value| value == 0 }
+end
+
+p fourth_anagram?("gizmo", "sally")    #=> false
+p fourth_anagram?("elvis", "lives")    #=> true

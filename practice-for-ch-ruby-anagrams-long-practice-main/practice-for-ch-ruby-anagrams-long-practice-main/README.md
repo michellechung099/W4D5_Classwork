@@ -67,4 +67,4 @@ What is the time complexity?
 Discuss the time complexity of your solutions together, then **call over an
 Instructor** to look at them.
 
-[array-permutation-docs]: http://ruby-doc.org/core-2.2.3/Array.html#method-i-permutation
+[array-permutation-docs]: 
